@@ -4,7 +4,7 @@
         <v-app-bar
                 app
                 clipped-left
-                color="green"
+                color="blue"
         >
             <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
             <v-btn text  @click="$router.push('/')"><span class="title ml-3 mr-5">12&nbsp;<span class="font-weight-light">Street</span></span></v-btn>
@@ -38,7 +38,7 @@
                 <v-list>
                     <v-list-item
                             v-for="(menu, index) in menus"
-                            :key="index"
+                            :key="index"                   
                             @click="action(menu.id)"
                     >
                         <v-icon style="padding-right: 5px">{{menu.icon}}  </v-icon>
